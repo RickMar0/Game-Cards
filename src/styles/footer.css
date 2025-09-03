@@ -1,0 +1,53 @@
+.footer {
+  overflow: hidden;
+  user-select: none;
+  position: fixed;
+  bottom: -200px;
+  left: 0;
+  right: 0;
+}
+
+.rounded-tab {
+  --r: 25px; /* control the radius */
+
+  line-height: 3; /* control the height */
+  padding-inline: 0.5em;
+  border-inline: var(--r) solid #0000;
+  border-radius: calc(2 * var(--r)) calc(2 * var(--r)) 0 0 / var(--r);
+  mask: radial-gradient(var(--r) at var(--r) 0, #0000 98%, #000 101%)
+      calc(-1 * var(--r)) 100%/100% var(--r) repeat-x,
+    conic-gradient(#000 0 0) padding-box;
+  background: #ee6c4d border-box; /* border-box is needed for a gradient coloration */
+  width: fit-content;
+  margin: auto;
+}
+
+.rounded-tab:hover {
+  cursor: pointer;
+}
+
+.categories {
+  border-collapse: separate;
+  border-spacing: 10px;
+  width: fit-content;
+  margin: auto;
+  background: #ee6c4d;
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.categories td {
+  padding: 8px;
+  border-radius: 5px;
+  background: #d85e3f;
+}
+
+.categories td:hover {
+  cursor: pointer;
+  background-color: #98c1d9;
+}
+
+.categories td:active {
+  background: #3d5a80;
+}
