@@ -1,10 +1,13 @@
 .footer {
   overflow: hidden;
   user-select: none;
-  position: fixed;
-  bottom: -200px;
-  left: 0;
-  right: 0;
+  /*
+    position: fixed;
+    bottom: -150px;
+    left: 0;
+    right: 0; 
+  */
+  font-size: 30px;
 }
 
 .rounded-tab {
@@ -18,7 +21,7 @@
       calc(-1 * var(--r)) 100%/100% var(--r) repeat-x,
     conic-gradient(#000 0 0) padding-box;
   background: #ee6c4d border-box; /* border-box is needed for a gradient coloration */
-  width: fit-content;
+  width: 250px;
   margin: auto;
 }
 
@@ -40,7 +43,6 @@
 .categories td {
   padding: 8px;
   border-radius: 5px;
-  background: #d85e3f;
 }
 
 .categories td:hover {
@@ -50,4 +52,12 @@
 
 .categories td:active {
   background: #3d5a80;
+}
+
+.active {
+  background-color: rgb(61, 90, 128);
+}
+
+.inactive {
+  background-color: rgb(216, 94, 63);
 }

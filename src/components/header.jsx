@@ -7,7 +7,7 @@ export default function Header() {
       <p>
         Welcome to the Game Cards application!
         <br />
-        Here you can find a variety of challenges to enhance your gaming
+        Here you can find a variety of challenges to enhance your game
         experience.
       </p>
     </div>
