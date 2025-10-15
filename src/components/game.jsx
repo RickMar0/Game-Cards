@@ -3,7 +3,7 @@ import "../styles/game.css";
 
 export default function Game({ challengesArray }) {
   const [randomChallenge, setRandomChallenge] = useState(
-    "preess the Draw button to get a challenge"
+    "press the Draw button to get a challenge"
   );
 
   function drawNewChallenge() {

@@ -1,9 +1,19 @@
+import { useState } from "react";
+
 import "../styles/footer.css";
 
 export default function Footer({ categories, setCategories }) {
+  const [isClicked, setIsClicked] = useState(false);
+
+  function handleTabClick() {
+    setIsClicked(!isClicked);
+  }
+
   return (
-    <footer className="footer">
-      <div className="rounded-tab">Categories</div>
+    <footer className={`footer ${isClicked ? "clicked" : ""}`}>
+      <div className="rounded-tab" onClick={handleTabClick}>
+        Categories
+      </div>
       <Categories categories={categories} setCategories={setCategories} />
     </footer>
   );
