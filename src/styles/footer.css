@@ -22,12 +22,13 @@
 
   line-height: 3; /* control the height */
   padding-inline: 0.5em;
-  border-inline: var(--r) solid #0000;
+  border-inline: var(--r) solid rgba(0, 0, 0, 0);
   border-radius: calc(2 * var(--r)) calc(2 * var(--r)) 0 0 / var(--r);
-  mask: radial-gradient(var(--r) at var(--r) 0, #0000 98%, #000 101%)
+  mask: radial-gradient(var(--r) at var(--r) 0, #0000 98%, rgb(0, 0, 0) 101%)
       calc(-1 * var(--r)) 100%/100% var(--r) repeat-x,
     conic-gradient(#000 0 0) padding-box;
-  background: #ee6c4d border-box; /* border-box is needed for a gradient coloration */
+  background: rgba(61, 90, 128, 0.6) border-box; /* border-box is needed for a gradient coloration */
+  color: white;
   width: 250px;
   margin: auto;
 }
@@ -42,7 +43,7 @@
   margin-right: auto;
   border-spacing: 10px;
   width: 500px;
-  background: #ee6c4d;
+  background: rgba(61, 90, 128, 0.6);
   border-radius: 5px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -55,11 +56,11 @@
 
 .categories td:hover {
   cursor: pointer;
-  background-color: #98c1d9;
+  background-color: rgb(152, 193, 217);
 }
 
 .categories td:active {
-  background: #3d5a80;
+  background: rgb(61, 90, 128);
 }
 
 .active {
